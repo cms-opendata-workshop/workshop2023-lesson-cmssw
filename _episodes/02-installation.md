@@ -17,7 +17,18 @@ keypoints:
 
 ## Setting up your CMSSW area
 
-If you completed the lessons on [Docker](https://cms-opendata-workshop.github.io/workshop2022-lesson-docker) containers you should already have a working CMSSW area.  
+If you completed the lessons on [Docker](https://cms-opendata-workshop.github.io/workshop2023-lesson-docker) containers you should already have a working CMSSW area.  
+
+> ## Info for Mac users!
+> If you have a Mac and if you ran into challenges in the Docker lesson running the *CMSSW_7_6_7* container, you will
+> most likely not be able to execute the code in this lesson. 
+> 
+> *Don't worry!* :)
+>
+> You can still read through this lesson to get an idea of how the data winds up being processed. In addition, 
+> * For the workshop, much of the data will already have been processed and you can then analyze it with docker containers that work better with Mac processors.
+> * Or you will be working in a cloud environment, where the docker container *will* run OK. 
+{: .callout}
 
 
 If you have closed the container, re-start it with:
@@ -81,7 +92,7 @@ So, inevitably, the cmsRun executable needs a configuration file.  This configur
 >
 > > ## Solution
 > >
-> > We could simply repeat [what we already did](https://cms-opendata-workshop.github.io/workshop2022-lesson-docker/04-validation/index.html#run-a-simple-demo-for-testing-and-validating) while setting up our Docker container: run with the `Demo/DemoAnalyzer/demoanalyzer_cfg.py` python configuration file.  
+> > We could simply repeat [what we already did](https://cms-opendata-workshop.github.io/workshop2023-lesson-docker/04-validation/index.html#run-a-simple-demo-for-testing-and-validating) while setting up our Docker container: run with the `Demo/DemoAnalyzer/demoanalyzer_cfg.py` python configuration file.  
 > > To run in a more efficient way, although it is not strictly necessary, we use the bash redirector `>`, the redirection of `stderr` to `stdout` (`2>&1`), and the trailing run-in-the-background control operator `&`.  This allows us to send the output to a `dummy.log` file and run the proces in the background so we can still interact with the terminal.  
 > >
 > > ~~~
