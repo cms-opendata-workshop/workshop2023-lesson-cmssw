@@ -17,7 +17,7 @@ title: "Intro to CMSSW"
 # Life cycle stage of the lesson
 # See this page for more details: https://cdh.carpentries.org/the-lesson-life-cycle.html
 # Possible values: "pre-alpha", "alpha", "beta", "stable", "deprecated", "superseded"
-life_cycle: "beta"
+life_cycle: "stable"
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
